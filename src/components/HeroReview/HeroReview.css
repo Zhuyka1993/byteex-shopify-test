@@ -1,0 +1,53 @@
+.hero-review {
+    margin-top: 25px;
+    padding: 12px 16px;
+    border: 1px solid #EDEDED;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    color: #676869;
+    background-color: white;
+    order: 5;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.hero-review__avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.hero-review__header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hero-review__author {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.hero-review__rating {
+    color: #F5A400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.hero-review__count {
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.hero-review__text {
+    max-width: 395px;
+    margin: 12px 0 0;
+
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+}

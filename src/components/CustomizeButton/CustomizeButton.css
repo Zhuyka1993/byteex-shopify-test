@@ -1,0 +1,25 @@
+.customize-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 362px;
+  height: 56px;
+
+  background: #01005b;
+  color: #ffffff;
+
+  font-family: "Suisse Int'l", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.customize-button__arrow {
+  margin-left: 15px;
+}
