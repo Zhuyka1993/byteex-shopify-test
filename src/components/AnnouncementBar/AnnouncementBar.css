@@ -1,0 +1,47 @@
+.announcement-bar {
+    width: 100%;
+    background-color: #F9F0E5;
+}
+
+.announcement-bar p {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 32px;
+    max-width: 80%;
+    font-family: "Suisse Int'l", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 35px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    white-space: nowrap;
+    flex-shrink: 0;
+    color: #565656;
+}
+
+.announcement-bar__message--desktop,
+.announcement-bar__divider {
+    display: inline;
+}
+
+@media (max-width: 960px) {
+    .announcement-bar p {
+        max-width: 100%;
+        letter-spacing: none;
+    }
+
+    .announcement-bar__message--return,
+    .announcement-bar__divider_second {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .announcement-bar__message--desktop,
+
+    .announcement-bar__divider {
+        display: none;
+    }
+}
