@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { getReviews } from './sanity/getReviews'
 import AnnouncementBar from './components/AnnouncementBar/AnnouncementBar.jsx'
 import Header from './components/Header/Header.jsx'
+import AsSeenIn from './components/AsSeenIn/AsSeenIn.jsx'
 
 import Hero from './components/Hero/Hero'
 
@@ -20,10 +21,10 @@ function App() {
   return (
     <main>
       <AnnouncementBar />
-      <Header/>
-     
-       <Hero />
-     
+      <Header />
+
+      <Hero />
+      <AsSeenIn />
     </main>
   )
 }

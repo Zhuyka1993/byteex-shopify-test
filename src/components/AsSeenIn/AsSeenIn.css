@@ -1,0 +1,167 @@
+.as-seen-in {
+  margin-top: -80px;
+
+  padding: 20px 7% 80px;
+
+  background: linear-gradient(
+    180deg,
+    #F9F0E5 0%,
+    rgba(249, 240, 229, 0.18) 43.05%,
+    rgba(249, 240, 229, 0) 100%
+  );
+}
+
+.as-seen-in__slider {
+  touch-action: pan-y;
+}
+
+.as-seen-in__desktop-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.as-seen-in__desktop-logos img {
+  display: block;
+  width: auto;
+  max-height: 58px;
+  object-fit: contain;
+}
+
+.as-seen-in__mobile-slider {
+  display: none;
+}
+
+.as-seen-in__title {
+  margin: 50px 0 25px;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  color: #868787;
+;
+}
+
+
+
+.as-seen-in__dots {
+  display: none;
+}
+
+@media (max-width: 1240px) {
+  .as-seen-in__desktop-logos {
+    gap: 20px;
+  }
+
+  .as-seen-in__desktop-logos img {
+    max-width: 18%;
+  }
+}
+
+@media (max-width: 920px) {
+  .as-seen-in {
+    margin-top: -80px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .as-seen-in__desktop-logos {
+    gap: 15px;
+  }
+
+  .as-seen-in__desktop-logos img {
+    max-width: 17%;
+    max-height: 45px;
+  }
+}
+
+@media (max-width: 920px) {
+  .as-seen-in {
+    margin-top: -80px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .as-seen-in__desktop-logos {
+    gap: 15px;
+  }
+
+  .as-seen-in__desktop-logos img {
+    max-width: 17%;
+    max-height: 45px;
+  }
+}
+
+@media (max-width: 700px) {
+  .as-seen-in {
+    margin-top: -80px;
+    padding: 20px 0 70px;
+    overflow: hidden;
+  }
+
+  .as-seen-in__title {
+    margin-bottom: 25px;
+  }
+
+.as-seen-in__desktop-logos {
+  display: none;
+}
+
+.as-seen-in__mobile-slider {
+  display: block;
+}
+
+  .as-seen-in__track {
+    display: flex;
+    width: 300%;
+    transition: transform 0.3s ease;
+  }
+
+  .as-seen-in__slide {
+    width: 33.3333%;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .as-seen-in__slide img {
+    width: 30%;
+    max-height: 45px;
+    object-fit: contain;
+  }
+
+  .as-seen-in__dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .as-seen-in__dots button {
+    width: 12px;
+    height: 12px;
+
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+
+    background: #c8c8c8;
+    cursor: pointer;
+  }
+
+  .as-seen-in__dots button.active {
+    background: #000;
+  }
+}
