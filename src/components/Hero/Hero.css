@@ -21,6 +21,7 @@
 .hero__images {
      display: flex;
     align-items: center;
+    justify-content: center;
     flex-shrink: 1;
     min-width: 0;
 }

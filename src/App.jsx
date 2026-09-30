@@ -3,8 +3,9 @@ import { getReviews } from './sanity/getReviews'
 import AnnouncementBar from './components/AnnouncementBar/AnnouncementBar.jsx'
 import Header from './components/Header/Header.jsx'
 import AsSeenIn from './components/AsSeenIn/AsSeenIn.jsx'
-
+import DescribeTopBenefits from './components/DescribeTopBenefits/DescribeTopBenefits.jsx'
 import Hero from './components/Hero/Hero'
+import './App.css'
 
 function App() {
   const [reviews, setReviews] = useState([])
@@ -25,6 +26,7 @@ function App() {
 
       <Hero />
       <AsSeenIn />
+      <DescribeTopBenefits />
     </main>
   )
 }
