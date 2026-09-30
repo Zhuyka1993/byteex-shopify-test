@@ -1,0 +1,287 @@
+.how-the-product-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 70px 7%;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+
+.how-the-product-works__title {
+    margin: 0 0 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #2A2996;
+}
+
+.how-the-product-works__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.how-the-product-works__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+}
+
+.how-the-product-works__icon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.how-the-product-works__card {
+    width: 100%;
+    max-width: 346px;
+    height: auto;
+    aspect-ratio: 346 / 321;
+    box-sizing: border-box;
+    flex: 1 1 0;
+    min-width: 0;
+    border-radius: 8px;
+    border: 1px solid #EDEDED;
+    background: #F0EEEF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+
+.how-the-product-works__card--center {
+    background: #F9F0E6;
+}
+
+.how-the-product-works__card h3 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #01005B;
+}
+
+.how-the-product-works__card p {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #676869;
+}
+
+.how-the-product-works__arrow {
+    display: none;
+}
+
+.how-the-product-works .customize-button {
+    margin-top: 50px;
+}
+
+.how-the-product-works__reviews {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.how-the-product-works__reviews span {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #F5A400;
+}
+
+.how-the-product-works__reviews small {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: #6C6C6C;
+}
+
+@media (max-width: 700px) {
+    .how-the-product-works {
+        padding: 50px 20px;
+    }
+
+    .how-the-product-works__title {
+        margin-bottom: 35px;
+    }
+
+    .how-the-product-works__cards {
+        position: relative;
+        width: 100%;
+        max-width: 420px;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .how-the-product-works__card {
+        display: none;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .how-the-product-works__card--active {
+        display: flex;
+    }
+
+    .how-the-product-works__arrow {
+        position: absolute;
+        top: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        font-size: 32px;
+        line-height: 1;
+        color: #2A2996;
+        cursor: pointer;
+        transform: translateY(-50%);
+    }
+
+    .how-the-product-works__arrow--left {
+        left: 0;
+    }
+
+    .how-the-product-works__arrow--right {
+        right: 0;
+    }
+
+    .how-the-product-works .customize-button {
+        margin-top: 40px;
+    }
+
+    .how-the-product-works__reviews {
+        margin-top: 25px;
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+
+.how-the-product-works__card {
+    width: 346px;
+    height: 321px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #EDEDED;
+    background: #F0EEEF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.how-the-product-works__card--center {
+    background: #F9F0E6;
+}
+
+.how-the-product-works__card h3 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #01005B;
+}
+
+.how-the-product-works__card p {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #676869;
+}
+
+@media (max-width: 720px) {
+    .how-the-product-works__cards {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .how-the-product-works__card {
+        display: none;
+        width: min(346px, calc(100vw - 100px));
+        max-width: 346px;
+        flex: 0 1 346px;
+        aspect-ratio: 346 / 321;
+        padding: 20px;
+    }
+
+    @media (max-width: 720px) {
+        .how-the-product-works__cards {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            touch-action: pan-y;
+        }
+
+        .how-the-product-works__card {
+            display: none;
+            width: 288px;
+            height: 288px;
+            max-width: 288px;
+            flex: 0 0 288px;
+            aspect-ratio: 1 / 1;
+            padding: 20px;
+        }
+
+        .how-the-product-works__card--active {
+            display: flex;
+        }
+
+        .how-the-product-works__arrow {
+            position: static;
+            flex: 0 0 30px;
+            width: 30px;
+            height: 40px;
+            padding: 0;
+            border: 0;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: #01005B;
+            cursor: pointer;
+        }
+    }
+
+    .how-the-product-works__cards {
+        touch-action: pan-y;
+    }
+}
