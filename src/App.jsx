@@ -5,6 +5,7 @@ import Header from './components/Header/Header.jsx'
 import AsSeenIn from './components/AsSeenIn/AsSeenIn.jsx'
 import DescribeTopBenefits from './components/DescribeTopBenefits/DescribeTopBenefits.jsx'
 import Hero from './components/Hero/Hero'
+import FounderBuildConnection from './components/FounderBuildConnection/FounderBuildConnection.jsx'
 import './App.css'
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <Hero />
       <AsSeenIn />
       <DescribeTopBenefits />
+      <FounderBuildConnection />
     </main>
   )
 }
