@@ -7,23 +7,8 @@ import feature2 from '../../assets/hero/feature-2.svg'
 import feature3 from '../../assets/hero/feature-3.svg'
 import CustomizeButton from '../CustomizeButton/CustomizeButton.jsx'
 import HeroReview from '../HeroReview/HeroReview.jsx'
-import { useEffect, useState } from 'react'
-import { getReviews } from '../../sanity/getReviews'
 
-function Hero() {
-    const [review, setReview] = useState(null)
-
-    useEffect(() => {
-        async function loadReview() {
-            const reviews = await getReviews()
-
-            const featuredReview = reviews.find((review) => review.featured)
-
-            setReview(featuredReview)
-        }
-
-        loadReview()
-    }, [])
+function Hero({ review }) {
     return (
         <section className="hero">
             <div className="hero__content">
@@ -36,6 +21,7 @@ function Hero() {
                         <div className="hero__feature-icon">
                             <img src={feature1} alt="" />
                         </div>
+
                         <p>
                             Beautiful, comfortable, long wear for day or night.
                         </p>
@@ -45,6 +31,7 @@ function Hero() {
                         <div className="hero__feature-icon">
                             <img src={feature2} alt="" />
                         </div>
+
                         <p>
                             No wasteful extras, like tags or plastic packaging.
                         </p>
@@ -54,15 +41,17 @@ function Hero() {
                         <div className="hero__feature-icon">
                             <img src={feature3} alt="" />
                         </div>
+
                         <p>
                             Our signature fabric is incredibly comfortable, unlike anything
                             you've ever felt.
                         </p>
                     </div>
                 </div>
-                <CustomizeButton />
-                <HeroReview review={review} />
 
+                <CustomizeButton />
+
+                <HeroReview review={review} />
             </div>
 
             <div className="hero__images">
