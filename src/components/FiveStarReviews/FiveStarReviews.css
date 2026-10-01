@@ -1,0 +1,16 @@
+.five-star-reviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.five-star-reviews__rating {
+    display: flex;
+    align-items: center;
+}
+
+.five-star-reviews__rating img {
+    width: 13px;
+    height: 13px;
+}

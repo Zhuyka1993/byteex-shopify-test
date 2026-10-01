@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { getReviews } from './sanity/getReviews'
 import { getFeaturedReview } from './sanity/getFeaturedReview'
 import { getUgcGallery } from './sanity/getUgcGallery'
+import { getFaq } from './sanity/getFaq'
 
 import AnnouncementBar from './components/AnnouncementBar/AnnouncementBar.jsx'
 import Header from './components/Header/Header.jsx'
@@ -11,6 +12,8 @@ import DescribeTopBenefits from './components/DescribeTopBenefits/DescribeTopBen
 import FounderBuildConnection from './components/FounderBuildConnection/FounderBuildConnection.jsx'
 import HowTheProductWorks from './components/HowTheProductWorks/HowTheProductWorks'
 import UserGeneratedContent from './components/UserGeneratedContent/UserGeneratedContent.jsx'
+import FAQ from './components/FAQ/FAQ.jsx'
+
 
 import './App.css'
 
@@ -18,6 +21,7 @@ function App() {
   const [reviews, setReviews] = useState([])
   const [featuredReview, setFeaturedReview] = useState(null)
   const [ugcGallery, setUgcGallery] = useState(null)
+  const [faq, setFaq] = useState([])
 
   useEffect(() => {
     getUgcGallery().then(setUgcGallery)
@@ -31,9 +35,14 @@ function App() {
       const data = await getFeaturedReview()
       setFeaturedReview(data)
     }
+    async function loadFaq() {
+      const data = await getFaq()
+      setFaq(data)
+    }
 
     loadReviews()
     loadFeaturedReview()
+    loadFaq()
   }, [])
 
   return (
@@ -55,6 +64,7 @@ function App() {
         gallery={ugcGallery}
         reviews={reviews}
       />
+      <FAQ faq={faq} />
     </main>
   )
 }

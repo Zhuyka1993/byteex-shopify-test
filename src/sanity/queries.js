@@ -14,3 +14,6 @@ export const ugcGalleryQuery = `
     images
   }
 `
+export const faqQuery = `
+  *[_type == "faq"] | order(_createdAt asc)
+`
