@@ -166,11 +166,12 @@
 @media (max-width: 850px) {
     .product-gallery__main {
         width: 100%;
-        
+
     }
 
     .product-gallery__image-wrapper {
-        width: 303px;
+        width: 280px;
+        min-width: 280px;
         aspect-ratio: 433 / 648;
         flex-shrink: 0;
     }

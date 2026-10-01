@@ -1,0 +1,112 @@
+.final-cta-info {
+    width: 100vw;
+    margin-top: 10px;
+    margin-left: calc(50% - 50vw);
+    padding-bottom: 50px;
+    background: linear-gradient(
+        180deg,
+        rgba(249, 240, 229, 0) 0%,
+        #F9F0E5 100%
+    );
+}
+
+.over { 
+    color: #828282 !important;
+}
+
+.final-cta-info__shipping {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.final-cta-info__shipping-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding-right: 15px;
+    border-right: 1px solid #D8D8D8;
+}
+
+.final-cta-info__shipping-row img {
+    width: 11px;
+    height: 11px;
+}
+
+.final-cta-info__shipping-row span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #1FAD40;
+}
+
+.final-cta-info__payment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.final-cta-info__payment img {
+    display: block;
+    width: auto;
+    height: 18px;
+    object-fit: contain;
+}
+
+.final-cta-info__benefits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.final-cta-info__benefit {
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.final-cta-info__benefit + .final-cta-info__benefit {
+    border-left: 1px solid #D8D8D8;
+}
+
+.final-cta-info__icon {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: rgba(102, 102, 102, 0.1);
+}
+
+.final-cta-info__icon img {
+    display: block;
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.final-cta-info__benefit p {
+    margin: 0 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #676869;
+}
+
+@media (max-width: 720px) {
+    .final-cta-info {
+        display: none;
+    }
+}

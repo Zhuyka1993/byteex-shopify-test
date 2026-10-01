@@ -1,0 +1,121 @@
+.final-cta {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 50px;
+    padding: 40px 20px 0px;
+}
+
+.final-cta__content {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* heading */
+
+.final-cta h2 {
+    margin: 0;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.04em;
+
+    color: #01005B;
+}
+
+/* description */
+
+.final-cta__description {
+    margin: 8px auto 0;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+
+    color: #676869;
+}
+
+.final-cta__description--mobile {
+    display: none;
+}
+
+/* button */
+
+.final-cta__button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* desktop shipping + payments */
+
+.final-cta__desktop-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.final-cta__shipping {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+
+    color: #676869;
+}
+
+.final-cta__payments {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 10px;
+}
+
+/* mobile reviews */
+
+.final-cta__mobile-reviews {
+    display: none;
+}
+
+
+/* mobile */
+
+@media (max-width: 720px) {
+
+    .final-cta {
+        margin-top: 40px;
+        padding: 30px 20px 40px;
+    }
+
+    .final-cta h2 {
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .final-cta__description--desktop {
+        display: none;
+    }
+
+    .final-cta__description--mobile {
+        display: block;
+    }
+
+    .final-cta__desktop-info {
+        display: none;
+    }
+
+    .final-cta__mobile-reviews {
+        display: block;
+        margin-top: 10px;
+    }
+}

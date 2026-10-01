@@ -1,12 +1,12 @@
 import './Hero.css'
-import hero1 from '../../assets/hero/hero-1.webp'
-import hero2 from '../../assets/hero/hero-2.webp'
-import hero3 from '../../assets/hero/hero-3.webp'
+
 import feature1 from '../../assets/hero/feature-1.svg'
 import feature2 from '../../assets/hero/feature-2.svg'
 import feature3 from '../../assets/hero/feature-3.svg'
+
 import CustomizeButton from '../CustomizeButton/CustomizeButton.jsx'
 import HeroReview from '../HeroReview/HeroReview.jsx'
+import ImageCollage from '../ImageCollage/ImageCollage.jsx'
 
 function Hero({ review }) {
     return (
@@ -54,15 +54,7 @@ function Hero({ review }) {
                 <HeroReview review={review} />
             </div>
 
-            <div className="hero__images">
-                <div className="hero__gradient" />
-
-                <img src={hero1} alt="" />
-                <img src={hero2} alt="" />
-                <img src={hero3} alt="" />
-
-                <div className="hero__gradient" />
-            </div>
+            <ImageCollage />
         </section>
     )
 }

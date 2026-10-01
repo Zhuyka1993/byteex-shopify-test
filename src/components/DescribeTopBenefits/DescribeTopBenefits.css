@@ -106,8 +106,9 @@
     .describe-top-benefits__gallery {
         order: 2;
 
-        width: 100%;
+        
         margin: 0 0 40px;
+        margin: 0 auto;
     }
 
     .describe-top-benefits__features {

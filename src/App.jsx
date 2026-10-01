@@ -14,6 +14,7 @@ import HowTheProductWorks from './components/HowTheProductWorks/HowTheProductWor
 import UserGeneratedContent from './components/UserGeneratedContent/UserGeneratedContent.jsx'
 import FAQ from './components/FAQ/FAQ.jsx'
 import InfoBanner from './components/InfoBanner/InfoBanner.jsx'
+import FinalCTA from './components/FinalCTA/FinalCTA.jsx'
 
 
 import './App.css'
@@ -67,6 +68,7 @@ function App() {
       />
       <FAQ faq={faq} />
       <InfoBanner />
+      <FinalCTA />
     </main>
   )
 }
