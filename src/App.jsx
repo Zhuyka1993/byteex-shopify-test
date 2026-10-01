@@ -13,6 +13,7 @@ import FounderBuildConnection from './components/FounderBuildConnection/FounderB
 import HowTheProductWorks from './components/HowTheProductWorks/HowTheProductWorks'
 import UserGeneratedContent from './components/UserGeneratedContent/UserGeneratedContent.jsx'
 import FAQ from './components/FAQ/FAQ.jsx'
+import InfoBanner from './components/InfoBanner/InfoBanner.jsx'
 
 
 import './App.css'
@@ -65,6 +66,7 @@ function App() {
         reviews={reviews}
       />
       <FAQ faq={faq} />
+      <InfoBanner />
     </main>
   )
 }
